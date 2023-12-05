@@ -1,3 +1,3 @@
-# Changelog
+## Version 0.04
 
-Generated initial TTF file and generated the Dart code.
+Includes generated initial TTF file and generated the Dart code. Prepared to be published to pub repo.
