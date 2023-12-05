@@ -1,0 +1,27 @@
+name: flutter_iconoir_ttf
+description: 'Use Iconoir icons pack with the standard Icon widget.'
+version: 0.0.4
+repository: 'https://github.com/aakhil-kassim/flutter_iconoir_ttf'
+
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+  flutter: ">=1.17.0"
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  fonts:
+    - family: IconoirIcons
+      fonts:
+        - asset: fonts/iconoir_icons.ttf
