@@ -1,6 +1,6 @@
 ## Version 0.0.6
 
-Updated to have bold (700) and medium (500) weight
+Updated to have bold and regular weight
 
 ## Version 0.0.5
 

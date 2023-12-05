@@ -22,7 +22,8 @@ and use an `Icon` widget where the expected IconData is coming from the `Iconoir
 
 Example:
 
-`Icon(IconoirIcons.bluetooth, color: Color(0xFF0000FF), weight: 700)`
+`Icon(IconoirIcons.bluetooth, color: Color(0xFF0000FF))`
+`Icon(IconoirIconsBold.bluetooth, color: Color(0xFF0000FF))`
 
 ## Package Customization
 If you want to generate the icons yourself, update them, and/or add more icons, you should fork the git repo and use that fork in your pubspec.yaml file. Then run the generate.py file in the `_generator` directory

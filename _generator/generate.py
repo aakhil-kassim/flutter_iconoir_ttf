@@ -141,6 +141,22 @@ def generate_dart_class():
 
     f.write('}\n')
 
+    f.write('class IconoirIconDataBold extends IconData {\n')
+    f.write('  const IconoirIconDataBold(int codePoint) : super(codePoint, fontFamily: "IconoirIconsBold", fontPackage: "flutter_iconoir_ttf");\n')
+    f.write('}\n')
+
+    f.write('class IconoirIconsBold {\n')
+
+    for index, file in enumerate(sorted(os.listdir(icons_dir))):
+      if file.endswith('.svg'):
+        icon_name = os.path.splitext(file)[0]
+        camel_case_name = to_camel_case(icon_name)
+        unicode = f"{unicode_start + index:04x}"
+        f.write(f'  static const IconData {camel_case_name} = IconoirIconDataBold(0x{unicode});\n')
+        mapping.append({icon_name: unicode})
+
+    f.write('}\n')
+
 if __name__ == "__main__":
   cleanup_previous_build()
   clone_iconoir_icons()
