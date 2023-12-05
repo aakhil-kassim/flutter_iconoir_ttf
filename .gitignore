@@ -1,6 +1,7 @@
 # Don't track some stuff from _generator
 _generator/.venv/
 _generator/all_icons/
+_generator/all_icons_bold/
 
 # Miscellaneous
 *.class

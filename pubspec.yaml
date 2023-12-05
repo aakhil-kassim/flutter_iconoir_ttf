@@ -1,6 +1,6 @@
 name: flutter_iconoir_ttf
 description: 'Use Iconoir icons pack with the standard Icon widget.'
-version: 0.0.5
+version: 0.0.6
 repository: 'https://github.com/aakhil-kassim/flutter_iconoir_ttf'
 
 
@@ -24,4 +24,7 @@ flutter:
   fonts:
     - family: IconoirIcons
       fonts:
-        - asset: fonts/iconoir_icons.ttf
+        - asset: fonts/iconoir_icons_regular.ttf
+          weight: 500
+        - asset: fonts/iconoir_icons_bold.ttf
+          weight: 700
