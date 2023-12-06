@@ -28,7 +28,7 @@ It works as a regular TTF font file that can be generated with a script from the
 ## Package Customization
 
 See the customization document in the git repo:
-[customization.md](https://github.com/aakhil-kassim/flutter_iconoir_ttf/blob/main/doc/customization.md)
+[customization.md](https://github.com/aakhil-kassim/flutter_iconoir_ttf/blob/main/extra/customization.md)
 
 
 ## Example Picture
