@@ -33,4 +33,4 @@ See the customization document in the git repo:
 
 ## Example Picture
 
-<img src="doc/example.png" alt="Example main.dart screen" />
+<img src="https://github.com/aakhil-kassim/flutter_iconoir_ttf/raw/main/doc/example.png" alt="Example main.dart screen" />
