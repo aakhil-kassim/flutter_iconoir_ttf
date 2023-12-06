@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "oslllo-svg-fixer": "^3.0.0",
+    "svgtofont": "^4.0.1"
+  }
+}

@@ -8,15 +8,14 @@ You can just use the Icon widget and be on your way. ✨
 
 There are well over a thousand nice icons to choose from!
 
-It works as a regular TTF font file that can be generated with a FontForge script from the original SVGs and uses Python script to generate the corresponding Dart code.
+It works as a regular TTF font file that can be generated with a script from the original SVGs and also generate the Dart code.
 
-You don't need Python or FontForge to use this package. That is only to customize it.
 
 ## Usage:
 
 **Add the following to your imports**:
 
-`import 'package:flutter_iconoir_ttf/iconoir_icons.dart';`
+`import 'package:flutter_iconoir_ttf/flutter_iconoir_icons.dart';`
 
 ...then you can use an `Icon` widget where the expected IconData is coming from the `IconoirIcons` or `IconoirIconsBold` class.
 
@@ -30,5 +29,5 @@ You don't need Python or FontForge to use this package. That is only to customiz
 ## Package Customization
 
 See the customization document in the git repo:
-[docs/customization.md](https://github.com/aakhil-kassim/flutter_iconoir_ttf/docs/customization.md)
+[customization.md](https://github.com/aakhil-kassim/flutter_iconoir_ttf/docs/customization.md)
 

@@ -24,10 +24,7 @@ flutter:
   fonts:
     - family: IconoirIcons
       fonts:
-        - asset: fonts/iconoir_icons_regular.ttf
-          weight: 500
-        - asset: fonts/iconoir_icons_bold.ttf
-          weight: 700
+        - asset: fonts/IconoirIconsRegular.ttf
     - family: IconoirIconsBold
       fonts:
-        - asset: fonts/iconoir_icons_bold.ttf
+        - asset: fonts/IconoirIconsBold.ttf

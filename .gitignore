@@ -1,7 +1,10 @@
 # Don't track some stuff from _generator
 _generator/.venv/
 _generator/all_icons/
-_generator/all_icons_bold/
+_generator/enriched/
+_generator/enriched_bold/
+_generator/backup/
+node_modules/
 
 # Miscellaneous
 *.class
