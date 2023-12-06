@@ -1,6 +1,6 @@
 name: flutter_iconoir_ttf
-description: 'Use Iconoir icons pack with the standard Icon widget.'
-version: 0.0.6
+description: 'The free open source Iconoir icons for Flutter without dependency on flutter_svg. You cna just use the standard Icon widget!'
+version: 0.0.7
 repository: 'https://github.com/aakhil-kassim/flutter_iconoir_ttf'
 
 

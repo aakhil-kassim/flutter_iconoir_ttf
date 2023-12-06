@@ -1,6 +1,10 @@
+## Version 0.0.7
+
+Optimized TTF output quality.
+
 ## Version 0.0.6
 
-Updated to have bold and regular weight
+Updated to have bold and regular weight.
 
 ## Version 0.0.5
 

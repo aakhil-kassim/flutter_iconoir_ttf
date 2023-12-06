@@ -14,26 +14,21 @@ You don't need Python or FontForge to use this package. That is only to customiz
 
 ## Usage:
 
-Add:
+**Add the following to your imports**:
 
 `import 'package:flutter_iconoir_ttf/iconoir_icons.dart';`
 
-and use an `Icon` widget where the expected IconData is coming from the `IconoirIcons` class.
+...then you can use an `Icon` widget where the expected IconData is coming from the `IconoirIcons` or `IconoirIconsBold` class.
 
-Example:
+**Example**:
 
 `Icon(IconoirIcons.bluetooth, color: Color(0xFF0000FF))`
+
+
 `Icon(IconoirIconsBold.bluetooth, color: Color(0xFF0000FF))`
 
 ## Package Customization
-If you want to generate the icons yourself, update them, and/or add more icons, you should fork the git repo and use that fork in your pubspec.yaml file. Then run the generate.py file in the `_generator` directory
 
-Also remember to make a Python virtual env that has the requirement packages from requirements.txt, FontForge is installed, and oslllo-svg-fixer to convert the stokes to paths (optional but useful for simplifying the SVGs too complex for FontForge).
+See the customization document in the git repo:
+[docs/customization.md](https://github.com/aakhil-kassim/flutter_iconoir_ttf/docs/customization.md)
 
-If you want to add icons to the pack, place them in `_generator/additional_icons`
-
-### Note:
-
-Some icons from the upstream Iconoir pack fail to convert or throw off the font because they are sometimes a little too complex and are incompatible with FontForge due to the complex SVG syntax so they have been replaced with fixed versions. Making them bold with thicker stroke-width was also a challenge so there is a bold_override directory to deal with that before FontForge tries to read the SVG files.
-
-Don't delete the fixed ones from `_generator/additional_icons` unless you know what you're doing :)
