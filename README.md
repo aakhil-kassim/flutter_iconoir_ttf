@@ -15,14 +15,13 @@ It works as a regular TTF font file that can be generated with a script from the
 
 **Add the following to your imports**:
 
-`import 'package:flutter_iconoir_ttf/flutter_iconoir_icons.dart';`
+`import 'package:flutter_iconoir_ttf/flutter_iconoir_ttf.dart';`
 
 ...then you can use an `Icon` widget where the expected IconData is coming from the `IconoirIcons` or `IconoirIconsBold` class.
 
-**Example**:
+**Examples**:
 
 `Icon(IconoirIcons.bluetooth, color: Color(0xFF0000FF))`
-
 
 `Icon(IconoirIconsBold.bluetooth, color: Color(0xFF0000FF))`
 
