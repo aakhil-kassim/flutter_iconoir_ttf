@@ -5,6 +5,7 @@ _generator/enriched/
 _generator/enriched_bold/
 _generator/backup/
 node_modules/
+_generator/*.html
 
 # Miscellaneous
 *.class
