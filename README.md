@@ -30,3 +30,7 @@ It works as a regular TTF font file that can be generated with a script from the
 See the customization document in the git repo:
 [customization.md](https://github.com/aakhil-kassim/flutter_iconoir_ttf/docs/customization.md)
 
+
+## Example Picture
+
+<img src="docs/example.png" alt="Example main.dart screen" />
