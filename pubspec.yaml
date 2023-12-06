@@ -22,7 +22,7 @@ dev_dependencies:
 
 flutter:
   fonts:
-    - family: IconoirIcons
+    - family: IconoirIconsRegular
       fonts:
         - asset: fonts/IconoirIconsRegular.ttf
     - family: IconoirIconsBold
