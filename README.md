@@ -1,15 +1,18 @@
 # Flutter Iconoir TTF
 
-
 ## Intro:
-The free open source Iconoir icons for Flutter without dependency on flutter_svg like the regular Iconoir package has.
+The free open source Iconoir icons for Flutter without dependency on `flutter_svg` because they use a standard font file.
 
-You can just use the Icon widget and be on your way. ✨
+That means you can just use the Icon widget and be on your way. ✨
 
 There are well over a thousand nice icons to choose from!
 
-It works as a regular TTF font file that can be generated with a script from the original SVGs and also generate the Dart code.
+(even more if you include the additional **bold** variant!)
 
+This would not be possible without the Iconoir Project Community and their efforts. 💙
+
+## Rationale:
+Using a font is more lightweight on resources than parsing and rendering SVGs because the vector graphics in fonts are precompiled. Since the icons are monochrome glyphs, this works out pretty well.
 
 ## Usage:
 
@@ -17,7 +20,7 @@ It works as a regular TTF font file that can be generated with a script from the
 
 `import 'package:flutter_iconoir_ttf/flutter_iconoir_ttf.dart';`
 
-...then you can use an `Icon` widget where the expected IconData is coming from the `IconoirIcons` or `IconoirIconsBold` class.
+After importing, you can utilize an Icon widget, with `IconData` sourced from either the `IconoirIcons` or `IconoirIconsBold` class.
 
 **Examples**:
 
