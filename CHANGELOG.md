@@ -1,3 +1,7 @@
+## Version 0.0.8
+
+Uses latest Icons as of Dec 2023. Improved code formatting, comment docs, and lowered Min Dart SDK for greater backwards compatibility.
+
 ## Version 0.0.7
 
 Optimized TTF output quality.
