@@ -139,13 +139,17 @@ unicode_start=0xEA01
 generate_dart_class() {
   echo "Generating Dart class..."
   {
+    echo '/// Flutter Iconoir Icon Pack - TrueType Font Version.'
     echo 'library flutter_iconoir_ttf;'
     echo ''
     echo 'import "package:flutter/widgets.dart";'
     echo ''
+    echo '/// An icon data class for regular stroke-width Iconoir icons.'
     echo 'class IconoirIconData extends IconData {'
+    echo '  /// Creates an icon data for Iconoir icons regular stroke-width set.'
     echo '  const IconoirIconData(int codePoint) : super(codePoint, fontFamily: "IconoirIconsRegular", fontPackage: "flutter_iconoir_ttf");'
     echo '}'
+    echo '/// A collection of Flutter icons from the Iconoir regular stroke-width set.'
     echo 'class IconoirIcons {'
 
     local index=0
@@ -156,16 +160,20 @@ generate_dart_class() {
       camel_case_name=$(echo "$icon_name" | awk -F'-' '{ printf "%s", $1; for(i=2; i<=NF; i++) printf toupper(substr($i,1,1)) substr($i,2); }')
       local unicode
       unicode=$((unicode_start + index))
+      echo "  /// Iconoir icon for '$icon_name'."
       echo "  static const IconData $camel_case_name = IconoirIconData(0x$(printf '%x' "$unicode"));"
       ((index++))
     done
 
     echo '}'
     echo ''
+    echo '/// An icon data class for bold stroke-width Iconoir icons.'
     echo 'class IconoirIconDataBold extends IconData {'
+    echo '  /// Creates an icon data for Iconoir icons bold stroke-width set.'
     echo '  const IconoirIconDataBold(int codePoint) : super(codePoint, fontFamily: "IconoirIconsBold", fontPackage: "flutter_iconoir_ttf");'
     echo '}'
     echo ''
+    echo '/// A collection of Flutter icons from the Iconoir bold stroke-width set.'
     echo 'class IconoirIconsBold {'
 
     index=0
@@ -176,6 +184,7 @@ generate_dart_class() {
       camel_case_name=$(echo "$icon_name" | awk -F'-' '{ printf "%s", $1; for(i=2; i<=NF; i++) printf toupper(substr($i,1,1)) substr($i,2); }')
       local unicode
       unicode=$((unicode_start + index))
+      echo "  /// Iconoir icon for '$icon_name' in bold stroke-width."
       echo "  static const IconData $camel_case_name = IconoirIconDataBold(0x$(printf '%x' "$unicode"));"
       ((index++))
     done
@@ -186,3 +195,4 @@ generate_dart_class() {
 
 generate_dart_class
 
+dart format -o write "$output_dart_file"
