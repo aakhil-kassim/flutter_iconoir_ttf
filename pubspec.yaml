@@ -1,11 +1,11 @@
 name: flutter_iconoir_ttf
-description: 'The free open source Iconoir icons for Flutter without dependency on flutter_svg. You can just use the standard Icon widget!'
-version: 0.0.7
+description: 'The free open source Iconoir icons for Flutter without dependency on flutter_svg as they are font based. You can just use the standard Icon widget!'
+version: 0.0.8
 repository: 'https://github.com/aakhil-kassim/flutter_iconoir_ttf'
 
 
 environment:
-  sdk: '>=3.2.0 <4.0.0'
+  sdk: '>=2.17.0 <4.0.0'
   flutter: ">=1.17.0"
 
 
