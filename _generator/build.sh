@@ -20,8 +20,8 @@ os_name=$(uname -s)
 
 # which "$fontforge_binary" > /dev/null || { echo "Missing fontforge... exiting."; exit 1; }
 #####
-which svgtofont > /dev/null || { echo "Missing svgtofont... exiting."; exit 1; }
-which oslllo-svg-fixer > /dev/null || { echo "Missing svg-fixer... exiting."; exit 1; }
+npx svgtofont --version > /dev/null || { echo "Missing svgtofont... exiting."; exit 1; }
+npx oslllo-svg-fixer --version > /dev/null || { echo "Missing oslllo-svg-fixer... exiting."; exit 1; }
 
 # Extract repo
 icons_repo_url='https://github.com/iconoir-icons/iconoir'
@@ -53,7 +53,7 @@ case $yn in
     for svg in $all_icons_dir/*.svg; do
       base_svg=$(basename "$svg")
       if [ ! -f "$enriched_icons_dir/$base_svg" ]; then
-        oslllo-svg-fixer -s "$svg" -d "$enriched_icons_dir/"
+        npx oslllo-svg-fixer -s "$svg" -d "$enriched_icons_dir/"
       fi
     done
     ;;
@@ -92,7 +92,7 @@ case $yn in
       fi
       base_svg=$(basename "$svg")
       if [ ! -f "$enriched_icons_bold_dir/$base_svg" ]; then
-        oslllo-svg-fixer -s "$svg" -d "$enriched_icons_bold_dir/"
+        npx oslllo-svg-fixer -s "$svg" -d "$enriched_icons_bold_dir/"
       fi
     done
     ;;
@@ -124,11 +124,11 @@ font_name="iconoir_icons"
 # "$fontforge_binary" -script create_ttf.py "$enriched_icons_dir" "$fonts_dir/${font_name}_regular.ttf" false
 # "$fontforge_binary" -script create_ttf.py "$enriched_icons_bold_dir" "$fonts_dir/${font_name}_bold.ttf" true
 #####
-svgtofont -s $enriched_icons_dir -o $temp_fonts_dir -f IconoirIconsRegular
+npx svgtofont -s $enriched_icons_dir -o $temp_fonts_dir -f IconoirIconsRegular
 cp $temp_fonts_dir/IconoirIconsRegular.ttf ../fonts/
 rm -rf $temp_fonts_dir
 mkdir -p $temp_fonts_dir
-svgtofont -s $enriched_icons_bold_dir -o $temp_fonts_dir -f IconoirIconsBold
+npx svgtofont -s $enriched_icons_bold_dir -o $temp_fonts_dir -f IconoirIconsBold
 cp $temp_fonts_dir/IconoirIconsBold.ttf ../fonts/
 rm -rf $temp_fonts_dir
 
