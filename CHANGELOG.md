@@ -1,3 +1,7 @@
+## Version 0.1.1
+
+Updated again to include latest upstream icons.
+
 ## Version 0.1.0
 
 Made under the hood improvements to generating the icon pack with the scripts. Note that this icon pack does not currently support the solid version of the Iconoir icons - therefore, no new icons have been introduced in this update as the new ones are only affecting the solid variant.
